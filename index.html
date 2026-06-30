@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <title>Instant Personal Loan Online | SalaryTopup Loan App</title>
+  <meta name="description"
+    content="SalaryTopup offers instant personal loans in minutes. Apply loan online even with low CIBIL score. RBI compliant loan app for salaried employees. Get up to ₹1 Lakh in 10 minutes." />
+  <meta name="keywords"
+    content="salary topup, salarytopup, instant loan, personal loan, loan app, salary loan, loan with low cibil score, instant cash loan, nbfc loan, loans for salaried employees" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="SalaryTopup" />
+
+  <!-- Open Graph / Social Meta Tags -->
+  <meta property="og:title" content="Instant Personal Loan Online | SalaryTopup Loan App" />
+  <meta property="og:description"
+    content="Get instant personal loans up to ₹1 Lakh in 10 minutes. Apply online even with low CIBIL score. RBI compliant loan app." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/logo.png" />
+
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">
+        <img src="assets/logo.png" alt="SalaryTopup Logo" class="brand-logo" />
+      </a>
+      <a href="#apply" class="btn btn-primary header-cta">APPLY NOW</a>
+    </div>
+  </header>
+
+  <!-- ===== HERO + FORM ===== -->
+  <section class="hero" id="top">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="blob blob-3"></span>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="pill">FOR SALARIED EMPLOYEES</span>
+        <h1>Instant Personal Loan Upto <span class="hl">₹1 Lakh</span> In <span class="hl">10 Minutes</span></h1>
+        <p class="hero-sub">Get money in just 10 minutes, no waiting stress! 100% online process, even with a low CIBIL score.</p>
+        <ul class="hero-points">
+          <li><span class="tick">✓</span> Get Approved Instantly</li>
+          <li><span class="tick">✓</span> Only One Document Needed</li>
+          <li><span class="tick">✓</span> Credit Score Not A Concern</li>
+          <li><span class="tick">✓</span> 100% Digital, Paperless Process</li>
+        </ul>
+        <div class="trust-row">
+          <div class="trust-badge">RBI Compliant</div>
+          <div class="trust-badge">100% Secure</div>
+          <div class="trust-badge">Trusted by Thousands</div>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-num" data-count="100000" data-prefix="₹" data-suffix="+">₹0</div>
+            <div class="stat-label">Max Loan Amount</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num" data-count="10" data-suffix=" min">0 min</div>
+            <div class="stat-label">Disbursal Time</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num" data-count="50000" data-suffix="+">0+</div>
+            <div class="stat-label">Happy Customers</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Application Form -->
+      <div class="form-card" id="apply">
+        <div class="form-badge">Instant Approval</div>
+        <h2 class="form-title">FILL OUT THE FORM</h2>
+        <p class="form-sub">Get Instant Funds Now For Urgent Cash Needs</p>
+        <form id="loan-form" novalidate>
+          <div class="field">
+            <label>Employment type <span class="req">*</span></label>
+            <div class="radio-row">
+              <label class="radio-opt">
+                <input type="radio" name="employment" value="Salaried" /> <span>Salaried</span>
+              </label>
+              <label class="radio-opt">
+                <input type="radio" name="employment" value="Self Employed" /> <span>Self Employed</span>
+              </label>
+            </div>
+            <span class="error" data-for="employment"></span>
+          </div>
+
+          <div class="field">
+            <label for="name">Name <span class="req">*</span></label>
+            <input type="text" id="name" name="name" placeholder="Name" autocomplete="name" />
+            <span class="error" data-for="name"></span>
+          </div>
+
+          <div class="field">
+            <label for="mobile">Mobile <span class="req">*</span></label>
+            <div class="mobile-wrap">
+              <span class="prefix">+91</span>
+              <input type="tel" id="mobile" name="mobile" maxlength="10" placeholder="Mobile"
+                inputmode="numeric" autocomplete="tel" />
+            </div>
+            <span class="error" data-for="mobile"></span>
+          </div>
+
+          <div class="field">
+            <label for="salary">Salary as per Document (Rs.) <span class="req">*</span></label>
+            <input type="number" id="salary" name="salary" placeholder="Enter your monthly salary (e.g. 10,000)"
+              inputmode="numeric" min="0" />
+            <span class="error" data-for="salary"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">APPLY NOW</button>
+        </form>
+
+        <!-- Success state -->
+        <div class="form-success" id="form-success" hidden>
+          <div class="success-icon">✓</div>
+          <h3>Application Received!</h3>
+          <p>Thank you. Our team will call you shortly to complete your instant loan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY CHOOSE ===== -->
+  <section class="section why reveal">
+    <div class="container">
+      <h2 class="section-title">Why Choose SalaryTopup?</h2>
+      <p class="section-sub">Fastest instant loan app in India for salaried employees</p>
+      <div class="cards-3">
+        <div class="feature-card">
+          <div class="feature-ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="8" y1="13" x2="16" y2="13"/>
+              <line x1="8" y1="17" x2="14" y2="17"/>
+            </svg>
+          </div>
+          <h3>ONLY ONE DOCUMENT</h3>
+          <p>Just your last 3 months bank statement is enough. No paperwork hassle.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+            </svg>
+          </div>
+          <h3>QUICK ONLINE LOAN</h3>
+          <p>Get money in just 10 minutes. Fully digital approval and disbursal.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 3v18h18"/>
+              <rect x="7" y="12" width="3" height="6"/>
+              <rect x="12" y="8" width="3" height="10"/>
+              <rect x="17" y="5" width="3" height="13"/>
+            </svg>
+          </div>
+          <h3>CREDIT SCORE NOT A CONCERN</h3>
+          <p>Low CIBIL score? No problem. Apply and get approved instantly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="section steps-section reveal">
+    <div class="container">
+      <h2 class="section-title">Get Funds In 3 Simple Steps</h2>
+      <div class="cards-3">
+        <div class="step-card">
+          <div class="step-num">1</div>
+          <h3>Fill Out The Form</h3>
+          <p>Enter your basic details and apply online in under a minute.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">2</div>
+          <h3>Get Approved Instantly</h3>
+          <p>Quick verification with just your bank statement.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">3</div>
+          <h3>Money in Your Account</h3>
+          <p>Loan amount disbursed straight to your bank in minutes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ELIGIBILITY ===== -->
+  <section class="section eligibility reveal">
+    <div class="container">
+      <h2 class="section-title">Eligibility Criteria</h2>
+      <p class="section-sub">Loans for Salaried Employees</p>
+      <div class="elig-grid">
+        <div class="elig-card">
+          <div class="elig-ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+          </div>
+          <div class="elig-text">
+            <h3>21+ Years</h3>
+            <p>You should be 21 years of age or older.</p>
+          </div>
+        </div>
+        <div class="elig-card">
+          <div class="elig-ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M14.5 8.5H10a2 2 0 0 0 0 4h1.5M9.5 12.5H15M9.5 15.5h4.5M9 8.5h5"/>
+            </svg>
+          </div>
+          <div class="elig-text">
+            <h3>₹40,000+ Salary</h3>
+            <p>Earn a monthly salary of ₹40,000 or more.</p>
+          </div>
+        </div>
+        <div class="elig-card">
+          <div class="elig-ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="7" width="20" height="14" rx="2"/>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+            </svg>
+          </div>
+          <div class="elig-text">
+            <h3>3 Months Job</h3>
+            <p>Worked at least 3 months with your current employer.</p>
+          </div>
+        </div>
+        <div class="elig-card">
+          <div class="elig-ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 21h18M4 10h16M5 10V7l7-4 7 4v3M6 10v8M10 10v8M14 10v8M18 10v8"/>
+            </svg>
+          </div>
+          <div class="elig-text">
+            <h3>Bank Statement</h3>
+            <p>Last 3 months bank statement available.</p>
+          </div>
+        </div>
+      </div>
+      <a href="#apply" class="btn btn-primary">CHECK ELIGIBILITY &amp; APPLY</a>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section faq reveal">
+    <div class="container">
+      <h2 class="section-title">Frequently asked questions</h2>
+      <div class="faq-grid" id="faq-list">
+        <div class="faq-item">
+          <button class="faq-q">What is Salary Topup?<span class="faq-toggle">+</span></button>
+          <div class="faq-a"><p>Salary Topup is a short-term, unsecured loan offered by Non-Banking Financial Companies (NBFCs) to help individuals meet immediate financial needs.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">How do Salary Topup work?<span class="faq-toggle">+</span></button>
+          <div class="faq-a"><p>Salary Topup are usually small amounts of money, offered without the need for collateral.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">What is the eligibility to apply for a Loan?<span class="faq-toggle">+</span></button>
+          <div class="faq-a"><p>Eligibility criteria: You must be at least 21 years of age. You should be a salaried employee or have a steady source of income.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">How much can I borrow through a Salary Topup Loan?<span class="faq-toggle">+</span></button>
+          <div class="faq-a"><p>The loan amount typically ranges from ₹5,000 to ₹50,000, depending on your income, credit score, and the lending policies.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">What is the repayment period for a Salary Topup Loan?<span class="faq-toggle">+</span></button>
+          <div class="faq-a"><p>Repayment terms generally range from 7 days to 30 days, often aligning with your payday.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Do I need to provide collateral to get a Salary Topup Loan?<span class="faq-toggle">+</span></button>
+          <div class="faq-a"><p>No, payday loans are typically unsecured, meaning no collateral is required.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">What documents are required to apply for a Salary Topup Loan?<span class="faq-toggle">+</span></button>
+          <div class="faq-a"><p>Common documentation includes: Proof of identity (Aadhar card, passport, voter ID). Proof of address (electricity bill, rent agreement). Proof of income (salary slips, bank statements). Employment proof.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">How fast can I receive the loan amount?<span class="faq-toggle">+</span></button>
+          <div class="faq-a"><p>Once your loan application is approved, the funds are typically disbursed quickly, often within 24-48 hours. In some cases, the loan amount may be credited to your bank account within a few hours.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">What happens if I miss my loan repayment date?<span class="faq-toggle">+</span></button>
+          <div class="faq-a"><p>If you're unable to repay your loan on time, it's essential to contact Salary Topup immediately to discuss your options. Depending on the circumstances, Salary Topup may offer repayment extensions or alternative arrangements to help you manage your debt.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Can I prepay or close the loan before the due date?<span class="faq-toggle">+</span></button>
+          <div class="faq-a"><p>Yes, Salary Topup allow you to repay the loan before the due date. However, there may be a reduced interest benefit.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sticky mobile CTA -->
+  <a href="#apply" class="sticky-cta">APPLY NOW · Get ₹1 Lakh</a>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
